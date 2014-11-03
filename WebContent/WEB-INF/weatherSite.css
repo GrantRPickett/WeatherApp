@@ -1,0 +1,82 @@
+html,body {
+	height: 98%;
+	width: 98%;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	boreder: none;
+	background : #777
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#titleBar {
+	font-family: italic bold, sans-serif;
+	font-size: 3em;
+	text-align: center;
+	height: 1.2em;
+	background : #EE2
+}
+
+div#mainArea {
+	overflow-y: auto;
+	width: 100%;
+}
+
+.fixedFlexItem {
+	flex: none;
+	-webkit-flex: none;
+	-ms-flex: none;
+}
+
+.fullFlexItem {
+	flex: 1 1;
+	-webkit-flex: 1 1;
+	-ms-flex: 1 1;
+	flex-wrap: wrap;
+}
+
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+}
+
+.vertical {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+}
+
+.center {
+	justify-content: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: justify;
+}
+
+.subPanel {
+	padding: 1em;
+	min-width: 200px;
+	max-width: 200px;
+	overflow: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+
+.panelHeader {
+	font-size: 2em;
+	padding-bottom: .4em;
+}
+
+.dialogTemplate {
+	display: none;
+	border: 1px solid;
+}
+#results {
+	background: #FFF;
+}

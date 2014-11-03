@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="us">
+<head>
+<title>Weather Site CSC490Adv</title>
+<link rel="stylesheet" href="jquery-ui.min.css">
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="weatherSite.js"></script>
+<link href="weatherSite.css" rel="stylesheet"></link>
+</head>
+
+<body class="flexContainer vertical">
+	<div id="titleBar" class="fixedFlexItem">Weather!</div>
+	<div id="mainArea" class="fullFlexItem flexContainer center">
+		<div class="subPanel fixedFlexItem">
+			<div class="fixedFlexItem">
+				Location: <input id="locationField" type="text" name="locField"><br>
+			</div>
+			<div class="fixedFlexItem">
+				<form action="#" class="fixedFlexItem">
+					<fieldset class="fixedFlexItem">
+						<label class="fixedFlexItem" for="type">Select type</label> <select
+							class="fixedFlexItem" name="type" id="type">
+							<option value="hourly">Today's Hourly Forecast</option>
+							<option value="forecast">Four day Forecast</option>
+							<option value="conditions">Current Conditions</option>
+							<option value="alerts">Alerts</option>
+						</select>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="subPanel fixedFlexItem">
+			<button id="resultBtn" class="fixedFlexItem">Get Weather</button>
+			<div id="resultPanel" class="flexContainer">
+				<label class="flexContainer" id=results></label>
+			</div>
+		</div>
+	</div>
+	<div id="footerBar" class="fixedFlexItem">
+		<div class="flexContainer center">
+			<button id="dialogbtn" class="fixedFlexItem">Options</button>
+		</div>
+	</div>
+
+</body>
+
+<div id="dialog" title="Note" class="dialogTemplate">
+	<div class="fixedFlexItem">
+		<form action="#" class="fixedFlexItem">
+			<fieldset class="fixedFlexItem">
+				<label class="fixedFlexItem" for="temp">Select temperature
+					format: </label> <select class="fixedFlexItem" name="temp" id="temp">
+					<option value="fahrenheit">Fahrenheit</option>
+					<option value="celsius">Celsius</option>
+				</select>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+</html>
